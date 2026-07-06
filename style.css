@@ -29,7 +29,7 @@ h1{
   overflow:auto;
 }
 .frist{
-  height:300px;
+  height:500px;
   width:100%;
   background-size:cover;
   background-image: url("https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1200&auto=format&fit=crop");
@@ -42,7 +42,7 @@ h1{
 }
 .basediv{
   position:relative;
-  top:170px;
+  top:300px;
   color:white;
   left:30px;
 
