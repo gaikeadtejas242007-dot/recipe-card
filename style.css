@@ -7,6 +7,7 @@
 
 body{
   display:flex;
+  height:140vh;
   justify-content:center;
   align-items:center;
  background-color:rgb(41, 0, 0)
