@@ -284,6 +284,7 @@ h2{
   display:flex;
   justify-content: center;
   align-items: center;
+  
 }
 .time{
   height:125px;
@@ -291,6 +292,7 @@ h2{
   margin:3px;
   background-color: #3A2418;
   border-radius:5px;
+  border-radius: 0 0 20px 20px;
 }
 .running{
   text-align:center;
