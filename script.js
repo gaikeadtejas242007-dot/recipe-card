@@ -169,3 +169,4 @@ const header = document.querySelector(".accordion-header");
 header.addEventListener("click", () => {
     accordion.classList.toggle("closed");
 });
+

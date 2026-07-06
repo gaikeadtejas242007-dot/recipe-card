@@ -94,7 +94,7 @@ h2{
 .progress{
   height:25px;
   width:90%;
-  background-color:red;
+  background-color:rgb(94, 3, 3);
   border-radius:20px;
   margin:8px 8px 4px 24px ;
   text-align:center;
@@ -410,3 +410,4 @@ summary{
   background-color: white;
   visibility:hidden;
 }
+
