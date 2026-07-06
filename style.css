@@ -1,0 +1,410 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:polifair,display;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ background-color:rgb(41, 0, 0)
+}
+h1{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+
+
+.recipe-card{
+  border:2px solid #ebebee;
+  margin-top:30px;
+  height:120vh;
+  width:100vh;
+  border-radius:20px;
+  background-color: white;
+  outline-color:rgb(205, 20, 20);
+  overflow:auto;
+}
+.frist{
+  height:300px;
+  width:100%;
+  background-size:cover;
+  background-image: url("https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1200&auto=format&fit=crop");
+  border-radius:20px 20px 0 0;
+}
+.frist:hover{
+  height:30s0px;
+  width:100%;
+  z-index:1;
+}
+.basediv{
+  position:relative;
+  top:170px;
+  color:white;
+  left:30px;
+
+}
+.second{
+  height:80px;
+  width:100%;
+  color:brown;
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.four{
+  height:80px;
+  width:25%;
+  text-align:center;
+  padding-top:20px;
+  border:0.5px solid rgb(44, 35, 35);
+
+}
+.four:hover{
+ position:relative;
+ top:-1px;
+  background-color:rgb(234, 215, 215)
+  
+}
+/* pre{
+  margin:0px;
+  display:inline;
+} */
+h2{
+  font-size:18px;
+  color:black;
+}
+.third{
+  color:white;
+  height:65px;
+  width:100%;
+  background-color:rgb(245, 229, 229);
+  
+  
+}
+.heading{
+  position:relative;
+  color:#0b0908;
+  left:30px;
+}
+.progress{
+  height:25px;
+  width:90%;
+  background-color:red;
+  border-radius:20px;
+  margin:8px 8px 4px 24px ;
+  text-align:center;
+}
+.btn{
+  width:90%;
+  color:black;
+
+}
+.ingrediants{
+  width:100%;
+  height:65px;
+  background-color:white;
+  
+}
+.ingrediants h1{
+  position:relative;
+  left:19px;
+}
+#ingrades{
+  width:100%;
+  height:65px;
+  padding:20px;
+  font-size:25px;
+}
+
+
+
+.container{
+    width:90%;
+    max-width:1000px;
+}
+
+/* Dropdown */
+
+.ingredients-dropdown{
+    border-top:1px solid #e0d3c2;
+    border-bottom:1px solid #e0d3c2;
+    padding:12px 0;
+    font-size:28px;
+}
+
+/* Remove default marker */
+.ingredients-dropdown summary{
+    list-style:none;
+}
+
+.ingredients-dropdown summary::-webkit-details-marker{
+    display:none;
+}
+
+/* Heading */
+
+.ingredients-dropdown summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+
+    font-family:'Playfair Display',serif;
+    font-size:38px;
+    font-weight:700;
+    color:#4b3527;
+
+    user-select:none;
+}
+
+/* Arrow */
+
+.ingredients-dropdown summary::after{
+    content:"▼";
+    font-size:18px;
+    color:#b96c1d;
+    transition:.35s;
+}
+
+.ingredients-dropdown[open] summary::after{
+    transform:rotate(180deg);
+}
+
+/* Space below heading */
+
+.ingredients-grid{
+    margin-top:30px;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+/* Ingredient Card */
+
+.ingredient-box{
+    background:#fcf8f3;
+    border:1px solid #e5d8ca;
+    border-radius:16px;
+
+    padding:16px 18px;
+
+    font-size:18px;
+    color:#6b5645;
+
+    transition:.3s;
+}
+
+.ingredient-box strong{
+    color:#8d2437;
+    margin-right:8px;
+    font-weight:700;
+}
+
+.ingredient-box:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+/* Animation */
+
+.ingredients-grid{
+    animation:fade .35s ease;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(-12px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .ingredients-dropdown summary{
+        font-size:28px;
+    }
+
+    .ingredients-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ingredient-box{
+        font-size:16px;
+    }
+
+}
+.five{
+  height:65px;
+  width:100%;
+  border:1px solid #F2E2D2;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn{
+  height:50px;
+  width:150px;
+  background-color:#AF234E;
+  border:2px solid black;
+  border-radius:20px;
+  font-size:25px;
+  font-weight:400;
+  text-align:center;
+  padding:10px;
+  color:white;
+
+}
+#next{
+  background:#6B3D2A;
+}
+#timer{
+  background:#c9822f;
+}
+#recipt{
+  background:white;
+  color:black;
+  font-weight:400;
+}
+.six{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.time{
+  height:125px;
+  width:98%;
+  margin:3px;
+  background-color: #3A2418;
+  border-radius:5px;
+}
+.running{
+  text-align:center;
+  color:#E8B578;
+  margin:20px;
+  font-size:20px;
+}
+span{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:25px;
+}
+summary{
+  position:relative;
+  left:30px;
+}
+
+.space{
+  height:200px;
+}
+
+
+.container{
+    width:100%;
+    max-width:1200px; /* Remove this line if you want full screen width */
+    margin:0 auto;
+}
+
+/* Dropdown */
+.ingredients-dropdown{
+    width:100%;
+    display:block;
+    background:#ffffff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+/* Header */
+.ingredients-dropdown summary{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 24px;
+    background:#ffffff;      /* Always White */
+    color:#3d2b1f;
+    cursor:pointer;
+    list-style:none;
+    font-size:2rem;
+    font-weight:700;
+    font-family:"Playfair Display", serif;
+}
+
+/* Remove default arrow */
+.ingredients-dropdown summary::-webkit-details-marker{
+    display:none;
+}
+
+/* Custom Arrow */
+.ingredients-dropdown summary::after{
+    content:"▼";
+    font-size:18px;
+    color:#b36b22;
+    transition:0.3s ease;
+}
+
+/* Rotate arrow when open */
+.ingredients-dropdown[open] summary::after{
+    transform:rotate(180deg);
+}
+
+/* Keep background white when open */
+.ingredients-dropdown[open]{
+    background:#ffffff;
+}
+
+/* Ingredients Section */
+.ingredients-grid{
+    width:100%;
+    background:#ffffff;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* Ingredient Card */
+.ingredient-box{
+    background:#ffffff;
+    border:1px solid #e3e3e3;
+    border-radius:12px;
+    padding:16px 18px;
+    font-size:17px;
+    color:#5b4b40;
+}
+
+.ingredient-box strong{
+    color:#8d2437;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .ingredients-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ingredients-dropdown summary{
+        font-size:1.5rem;
+    }
+}
+.space{
+  height:300px;
+}
+.five .six{
+  background-color: white;
+  visibility:hidden;
+}
