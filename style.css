@@ -31,17 +31,12 @@ h1{
 .frist{
   height:500px;
   width:100%;
-  background-size:contain;
+  background-size:cover;
   background-image: url("https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1200&auto=format&fit=crop");
   border-radius:20px 20px 0 0;
 }
-@media (man-width:389px) and (max-width:600px){
-  .frist{
-    background-size:auto;
-  }
-}
 .frist:hover{
-  height:30s0px;
+  height:500px;
   width:100%;
   z-index:1;
 }
@@ -272,44 +267,67 @@ h2{
   text-align:center;
   padding:10px;
   color:white;
-
 }
 #next{
   background:#6B3D2A;
-}
-#timer{
-  background:#c9822f;
 }
 #recipt{
   background:white;
   color:black;
   font-weight:400;
 }
-/* .six{
+.six{
   display:flex;
-  justify-content: center;
-  align-items: center;
-  
+  justify-content:center;
+  align-items:center;
+  padding:20px;
 }
 .time{
-  height:125px;
-  width:98%;
-  margin:3px;
-  background-color: #3A2418;
-  border-radius:5px;
-  border-radius: 0 0 20px 20px;
-} */
-.running{
+  width:100%;
+  max-width:520px;
+  background:#fff8f2;
+  border:1px solid #ddd;
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
   text-align:center;
-  color:#E8B578;
-  margin:20px;
-  font-size:20px;
 }
-span{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size:25px;
+.time h1{
+  margin:0 0 14px;
+  font-size:2rem;
+  color:#3d2b1f;
+  font-weight:700;
 }
-summary{
+#countdownDisplay{
+  font-size:4rem;
+  font-weight:800;
+  letter-spacing:4px;
+  color:#c0392b;
+  margin:16px 0 24px;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.buttons button{
+  min-width:110px;
+  padding:12px 18px;
+  border:none;
+  border-radius:999px;
+  background:#AF234E;
+  color:#ffffff;
+  font-size:1rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:transform .2s ease, background .2s ease;
+}
+.buttons button:hover{
+  transform:translateY(-2px);
+  background:#8e1e3f;
+}
+.summary{
   position:relative;
   left:30px;
 }
@@ -421,5 +439,14 @@ summary{
 
 
 
+
+.six{
+    margin-top:30px;
+}
+
+
+#countdown{
+    letter-spacing:2px;
+}
 
 
