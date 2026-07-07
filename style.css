@@ -94,10 +94,24 @@ h2{
 .progress{
   height:25px;
   width:90%;
-  background-color:rgb(94, 3, 3);
+  background-color:rgb(231, 219, 214);
   border-radius:20px;
   margin:8px 8px 4px 24px ;
   text-align:center;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:100%;
+  width:0%;
+  background-color:#c0392b;
+  border-radius:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-weight:700;
+  transition: width 1s linear;
 }
 .btn{
   width:90%;
@@ -128,7 +142,7 @@ h2{
     max-width:1000px;
 }
 
-/* Dropdown */
+
 
 .ingredients-dropdown{
     border-top:1px solid #e0d3c2;
@@ -137,7 +151,7 @@ h2{
     font-size:28px;
 }
 
-/* Remove default marker */
+
 .ingredients-dropdown summary{
     list-style:none;
 }
@@ -146,7 +160,7 @@ h2{
     display:none;
 }
 
-/* Heading */
+
 
 .ingredients-dropdown summary{
     display:flex;
@@ -162,7 +176,7 @@ h2{
     user-select:none;
 }
 
-/* Arrow */
+
 
 .ingredients-dropdown summary::after{
     content:"▼";
@@ -175,7 +189,7 @@ h2{
     transform:rotate(180deg);
 }
 
-/* Space below heading */
+
 
 .ingredients-grid{
     margin-top:30px;
@@ -209,6 +223,12 @@ h2{
 .ingredient-box:hover{
     transform:translateY(-3px);
     box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.ingredient-box.active{
+    border: 2px solid #c0392b;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.18);
+    background: #fff4f0;
 }
 
 /* Animation */
@@ -338,6 +358,128 @@ h2{
   left:30px;
 }
 
+.receipt-box{
+  width:90%;
+  max-width:720px;
+  margin:22px auto 0;
+  padding:22px;
+  background:#fff9f5;
+  border:2px solid #f0d8d0;
+  border-radius:24px;
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.receipt-title{
+  margin:0 0 16px;
+  font-size:1.45rem;
+  font-weight:800;
+  color:#4b2b22;
+}
+
+.receipt-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:12px;
+  font-size:1rem;
+  color:#4b2b22;
+}
+
+.receipt-row span:last-child{
+  font-weight:700;
+}
+
+.receipt-total{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+  padding-top:16px;
+  border-top:1px solid #f3e2dc;
+  font-size:1.1rem;
+  font-weight:800;
+}
+
+.hidden{
+  display:none !important;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px 16px;
+  background: #af234e;
+  color: white;
+}
+
+.modal-close {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.receipt-body {
+  padding: 24px;
+  color: #333;
+}
+
+.receipt-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #4b2b22;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 0.98rem;
+  color: #4b2b22;
+}
+
+.receipt-row span:last-child {
+  font-weight: 700;
+}
+
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
 .space{
   height:200px;
 }
@@ -345,11 +487,11 @@ h2{
 
 .container{
     width:100%;
-    max-width:1200px; /* Remove this line if you want full screen width */
+    max-width:1200px; 
     margin:0 auto;
 }
 
-/* Dropdown */
+
 .ingredients-dropdown{
     width:100%;
     display:block;
@@ -359,14 +501,14 @@ h2{
     overflow:hidden;
 }
 
-/* Header */
+
 .ingredients-dropdown summary{
     width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:18px 24px;
-    background:#ffffff;      /* Always White */
+    background:#ffffff;      
     color:#3d2b1f;
     cursor:pointer;
     list-style:none;
@@ -375,12 +517,12 @@ h2{
     font-family:"Playfair Display", serif;
 }
 
-/* Remove default arrow */
+
 .ingredients-dropdown summary::-webkit-details-marker{
     display:none;
 }
 
-/* Custom Arrow */
+
 .ingredients-dropdown summary::after{
     content:"▼";
     font-size:18px;
@@ -388,17 +530,17 @@ h2{
     transition:0.3s ease;
 }
 
-/* Rotate arrow when open */
+
 .ingredients-dropdown[open] summary::after{
     transform:rotate(180deg);
 }
 
-/* Keep background white when open */
+
 .ingredients-dropdown[open]{
     background:#ffffff;
 }
 
-/* Ingredients Section */
+
 .ingredients-grid{
     width:100%;
     background:#ffffff;
@@ -408,7 +550,7 @@ h2{
     gap:20px;
 }
 
-/* Ingredient Card */
+
 .ingredient-box{
     background:#ffffff;
     border:1px solid #e3e3e3;
@@ -422,7 +564,7 @@ h2{
     color:#5b4b40;
 }
 
-/* Responsive */
+
 @media (max-width:768px){
     .ingredients-grid{
         grid-template-columns:1fr;

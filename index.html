@@ -42,8 +42,8 @@ restaurant-quality, made at home.</h3>
        preparation progress
     </div>
     
-     <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-  <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+     <div class="progress" role="progressbar" aria-label="Preparation progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-danger" id="progressBar" style="width: 0%" aria-valuenow="0">0%</div>
 </div>
    </section>
    <section class="fourth">
@@ -105,7 +105,7 @@ restaurant-quality, made at home.</h3>
         
 <div class="container">
 
-    <details class="ingredients-dropdown">
+    <details class="ingredients-dropdown" id="stepsDropdown">
         <summary style="font-size: 28.8px;">step-by-step Instruction</summary>
 
         <div class="ingredients-grid">
@@ -146,13 +146,25 @@ Preheat oven to 425°F (220°C). Butter and dust four ramekins with cocoa powder
     </details>
 </div>
 <section class="five">
-    <div class="btn" id="startBtn">start cooking </div>
+    <div class="btn" id="startCookingBtn">start cooking </div>
     <div class="btn" id="next">next step</div>
     <div class="btn" id="timerActionBtn">start timer</div>
     <div class="btn" id="recipt">print recipt </div>
 
 
 </section>
+
+<div id="receiptBox" class="receipt-box hidden">
+  <div class="receipt-title">Recipe Receipt</div>
+  <div class="receipt-row"><span>Item</span><span>Chocolate Lava Cake</span></div>
+  <div class="receipt-row"><span>Servings</span><span>4 cakes</span></div>
+  <div class="receipt-row"><span>Prep Time</span><span>15 min</span></div>
+  <div class="receipt-row"><span>Bake Time</span><span>12 min</span></div>
+  <div class="receipt-row"><span>Ingredients</span><span>Butter, chocolate, sugar, eggs, flour, cocoa</span></div>
+  <div class="receipt-row"><span>Instructions</span><span>8 steps</span></div>
+  <div class="receipt-row"><span>Final amount of coffee</span><span>1 cup</span></div>
+  <div class="receipt-total"><span>Total</span><span>$12.99</span></div>
+</div>
 
 <section class="six">
     <div class="time">
