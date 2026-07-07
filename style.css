@@ -280,10 +280,12 @@ h2{
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:20px;
+  padding:0;
+  background-color:#3d2b1f;
+  border-radius:0 0 24px 24px;
 }
 .time{
-  width:100%;
+  width:920px;
   max-width:520px;
   background:#fff8f2;
   border:1px solid #ddd;
@@ -291,11 +293,15 @@ h2{
   padding:28px;
   box-shadow:0 20px 40px rgba(0,0,0,.08);
   text-align:center;
+  background-color:#3d2b1f;
+  color:white;
+   
+  
 }
 .time h1{
   margin:0 0 14px;
   font-size:2rem;
-  color:#3d2b1f;
+  color:#b0632f;
   font-weight:700;
 }
 #countdownDisplay{
@@ -413,7 +419,7 @@ h2{
 }
 
 .ingredient-box strong{
-    color:#8d2437;
+    color:#5b4b40;
 }
 
 /* Responsive */
@@ -433,7 +439,6 @@ h2{
   background-color: white;
   visibility:hidden;
 }
-
 
 
 

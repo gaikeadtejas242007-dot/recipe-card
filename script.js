@@ -60,3 +60,14 @@ resetBtn?.addEventListener("click", () => {
 });
 
 updateDisplay();
+const timerActionBtn = document.getElementById("timerActionBtn");
+timerActionBtn?.addEventListener("click", () => {
+  startTimer();
+});
+
+let start_cooking=document.getElementById("startBtn");
+let procedure=document.getElementById("procedure");
+start_cooking.addEventListener("click",()=>{
+  procedure.style.border="red";
+
+})
