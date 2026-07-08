@@ -26,15 +26,32 @@ h1{
   border-radius:20px;
   background-color: white;
   outline-color:rgb(205, 20, 20);
-  overflow:auto;
+  overflow:scroll;
 }
 .frist{
   height:500px;
   width:100%;
   background-size:cover;
+  background-position:center;
   background-image: url("https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1200&auto=format&fit=crop");
   border-radius:20px 20px 0 0;
+  animation: cakeImageSteps 8s steps(2) infinite;
 }
+
+@keyframes cakeImageSteps {
+  0%, 33% {
+    background-image: url("https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1200&auto=format&fit=crop");
+  }
+
+  34%, 66% {
+    background-image: url("https://lavacake.co/wp-content/uploads/2026/04/BUENO-MILK-400x500.jpeg");
+  }
+
+  67%, 100% {
+    background-image: url("https://tastesbetterfromscratch.com/wp-content/uploads/2020/09/Dark-Chocolate-Cake-8.jpg");
+  }
+}
+
 .frist:hover{
   height:500px;
   width:100%;
